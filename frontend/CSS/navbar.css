@@ -1,0 +1,85 @@
+/* Navbar Styles */
+.bg-color {
+    background-color: #ffffff; /* เปลี่ยนเป็นสีฟ้าสดใส */
+}
+
+#logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.logofont {
+    color: black;
+}
+
+.nav-text {
+    font-size: 13px;
+    color: black;
+}
+
+.navbar-brand {
+    padding: 6px 16px;
+    font-size: 16px;
+    color: #ffb8b8; /* สีขาว */
+}
+
+.navbar-nav {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-item {
+    background-color: #006eff; /* สีชมพูอ่อนเมื่อ hover */
+    padding: 8px 12px;
+    margin: 0;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-item.active {
+    background-color: #8ddbff; /* เปลี่ยนเป็นสีชมพูสดใส */
+    color: #ffffff; /* สีขาว */
+}
+
+.nav-item:hover {
+    background-color: #3ed8ff; /* สีชมพูอ่อนเมื่อ hover */
+    color: #ffffff; /* สีขาว */
+}
+
+.nav-link {
+    padding: 3px 6px;
+    color: #ff0000; /* สีขาว */
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.fa {
+    font-size: 18px;
+    color: #ffffff; /* สีขาว */
+}
+
+/* Navbar Hamburger Icon */
+.navbar-toggler {
+    border: none;
+    font-size: 20px;
+    color: #ffffff; /* สีขาว */
+}
+
+/* Bell Icon */
+.fa-bell {
+    color: #ffffff; /* สีขาว */
+    font-size: 18px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+  
+
+  
+  
+  

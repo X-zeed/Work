@@ -1,0 +1,187 @@
+/* ส่วนของ Banner */
+.banner {
+    background-color: #4280be; /* สีพื้นหลังเหมือนเดิม */
+    color: white;
+    padding: 50px 20px; /* ลด padding ให้น้อยลง */
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* เพิ่มเงาให้ตัวแบนเนอร์ */
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.banner h1 {
+    font-size: 2.5rem; /* ลดขนาดตัวอักษร */
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); /* เพิ่มเงาให้ตัวหนังสือ */
+}
+
+.banner p {
+    font-size: 1.1rem;
+    margin-bottom: 20px; /* ลด margin */
+    font-weight: 300;
+}
+
+.banner .button-group a {
+    font-size: 1.1rem;
+    padding: 10px 22px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 5px;
+}
+
+.banner .button-group a:hover {
+    background-color: #2980b9;
+    transform: translateY(-5px); /* เพิ่มการเคลื่อนไหว */
+}
+
+/* ส่วนของ Search Section และ Featured Games */
+.search-game-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.search-section,
+.featured-games {
+    flex: 1; /* ให้ทั้งสองส่วนเท่ากัน */
+    background-color: #f8f9fa;
+    padding: 25px 15px; /* ลด padding ให้เล็กลง */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+.search-section {
+    background-color: #ffffff; /* ใช้สีคล้ายกับ banner */
+    color: white;
+}
+
+.featured-games {
+    background-color: #ffffff;
+}
+
+.search-section h2,
+.featured-games h2 {
+    font-size: 2rem; /* ลดขนาดตัวอักษร */
+    font-weight: bold;
+    margin-bottom: 15px; /* ลด margin */
+}
+
+.search-section .d-flex {
+    justify-content: flex-start;
+    gap: 12px;
+    width: 100%;
+}
+
+.search-section input {
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    width: 100%;
+    max-width: 350px;
+    transition: border-color 0.3s ease;
+}
+
+.search-section input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.search-section .btn {
+    padding: 10px 22px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.search-section .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Featured Games Section */
+.row.justify-content-center {
+    display: flex;
+    gap: 20px;
+}
+
+.game-card {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 280px; /* จำกัดขนาดของ game card */
+}
+
+.game-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.game-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.game-card h3 {
+    font-size: 1.3rem;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.game-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.game-card .btn {
+    margin-top: 10px;
+    padding: 8px 22px;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.game-card .btn:hover {
+    background-color: #218838;
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+    .search-section input {
+        width: 100%;
+    }
+
+    .featured-games h2 {
+        font-size: 1.8rem;
+    }
+
+    .game-card {
+        width: 100%; /* ให้ game card เป็น full width บนอุปกรณ์ขนาดเล็ก */
+    }
+
+    .search-game-container {
+        flex-direction: column; /* เรียงแบบตั้งตรง */
+    }
+
+    .search-section,
+    .featured-games {
+        width: 100%;
+    }
+}
