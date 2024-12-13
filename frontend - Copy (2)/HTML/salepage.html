@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Item</title>
+  <link rel="stylesheet" href="../CSS/salepage.css">
+  <link rel="stylesheet" href="../CSS/navbar.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../JS/salepage.js" defer></script>
+</head>
+<body>
+
+  <!-- ส่วนของ Navbar -->
+<div class="container-fluid px-0">
+  <nav class="navbar navbar-expand-md navbar-dark bg-color px-0 justify-content-start">
+    <a class="navbar-brand mr-0">
+      <img id="logo" src="https://i.pinimg.com/originals/46/90/42/469042bc4a71312d3f8ed06f3cadf5d2.jpg" alt="GameStore Logo">
+    </a>
+    <!-- <span class="fa fa-bell"></span> -->
+    <div class="flex-column d-flex">
+      <h6 class="mb-0 notification logofont">This is my website SPR SC 67</h6>
+      <small class="notify-count logofont">3 notifications are waiting for you</small>
+    </div>
+    <button class="navbar-toggler mr-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html"><span class="fa fa-book me-2"></span><span class="nav-text">Categories</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="salepage.html"><span class="fa fa-plus me-2"></span></a> <!-- ไอคอนบวกแทน Contact -->
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+  <div class="container">
+    <h1>Create New Item</h1>
+    <form id="createItemForm">
+      <div class="form-group">
+        <label for="title">Item Title:</label>
+        <input type="text" id="title" name="title" required>
+      </div>
+      <div class="form-group">
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="category_id">Category:</label>
+        <input type="text" id="category_id" name="category_id" required>
+      </div>
+      <div class="form-group">
+        <label for="item_condition">Item Condition:</label>
+        <input type="text" id="item_condition" name="item_condition" required>
+      </div>
+      <div class="form-group">
+        <label for="starting_price">Starting Price ($):</label>
+        <input type="number" id="starting_price" name="starting_price" required>
+      </div>
+      <div class="form-group">
+        <label for="end_time">End Time:</label>
+        <input type="datetime-local" id="end_time" name="end_time" required>
+      </div>
+      <div class="form-group">
+        <label for="image">Image URL:</label>
+        <input type="url" id="image" name="image">
+      </div>
+      <div class="form-group">
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <button type="submit">Create Item</button>
+    </form>
+    <div id="responseMessage"></div>
+  </div>
+</body>
+</html>
